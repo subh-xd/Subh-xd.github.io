@@ -1,24 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Life Log</title>
+  <title>My World</title>
+
+  <style>
+    body {
+      background: #0d0d0d;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 30px;
+      border: 3px solid #444;
+    }
+
+    h1 {
+      margin-top: 15px;
+      font-size: 28px;
+    }
+
+    p {
+      color: #aaa;
+      max-width: 300px;
+      margin: auto;
+      font-size: 14px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: block;
+      background: #1a1a1a;
+      padding: 12px;
+      margin: 10px auto;
+      width: 200px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #333;
+    }
+
+    .writing-box {
+      margin-top: 40px;
+      padding: 15px;
+      background: #1a1a1a;
+      border-radius: 10px;
+    }
+  </style>
+
 </head>
-<body style="background:black; color:white; font-family:sans-serif;">
 
-  <h1>Welcome to My World</h1>
-  <p>This is my personal space 🎬📚🎧</p>
+<body>
 
-  <h2>🎬 Movies</h2>
-  <p>Interstellar - 9/10</p>
+  <!-- YOUR PHOTO -->
+  <img src="yourphoto.jpg">
 
-  <h2>📚 Books</h2>
-  <p>Atomic Habits</p>
+  <h1>Welcome to My World 🌙</h1>
 
-  <h2>🎧 Music</h2>
-  <p>Sama ko pighalne ka vibes...</p>
+  <p>
+    Just someone who loves movies, music, books and late night thoughts.
+  </p>
 
-  <h2>✍️ Writing</h2>
-  <p>My thoughts will go here...</p>
+  <!-- BUTTONS -->
+  <div class="buttons">
+    <a href="movies.html" class="btn">🎬 Movies</a>
+    <a href="books.html" class="btn">📚 Books</a>
+    <a href="music.html" class="btn">🎧 Music</a>
+    <a href="writing.html" class="btn">✍️ Writing</a>
+  </div>
+
+  <!-- LATEST WRITING -->
+  <div class="writing-box">
+    <h3>Latest Thought ✍️</h3>
+    <p>Some nights feel heavier than silence...</p>
+  </div>
 
 </body>
 </html>
