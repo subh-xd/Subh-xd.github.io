@@ -1,3 +1,96 @@
-<h1>My Movies 🎬</h1>
-<p>List coming soon...</p>
-<a href="index.html">Back</a>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>cineমা</title>
+
+  <style>
+    body {
+      background: #0d0d0d;
+      color: white;
+      font-family: sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+
+    input {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 8px;
+      border: none;
+    }
+
+    button {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      background: #333;
+      color: white;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .content {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>cineমা 🎬</h1>
+
+  <!-- INPUT AREA -->
+  <input id="name" placeholder="Movie name">
+  <input id="rating" placeholder="Rating">
+  <input id="review" placeholder="Your review">
+  <button onclick="addMovie()">Add</button>
+
+  <div class="container" id="movies"></div>
+
+  <script>
+    async function addMovie() {
+      let name = document.getElementById("name").value;
+      let rating = document.getElementById("rating").value;
+      let review = document.getElementById("review").value;
+
+      let apiKey = "88ac488f";  
+
+      let res = await fetch(`https://www.omdbapi.com/?t=${name}&apikey=${apiKey}`);
+      let data = await res.json();
+
+      let poster = data.Poster;
+
+      let card = `
+        <div class="card">
+          <img src="${poster}">
+          <div class="content">
+            <b>${name}</b><br>
+            ⭐ ${rating}/10<br>
+            <small>${review}</small>
+          </div>
+        </div>
+      `;
+
+      document.getElementById("movies").innerHTML += card;
+    }
+  </script>
+
+</body>
+</html>
