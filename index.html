@@ -33,63 +33,64 @@
       font-size: 14px;
     }
 
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  gap: 15px;
-  max-width: 300px;
-  margin: 30px auto;
-}
+    /* BUTTON GRID */
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      max-width: 300px;
+      margin: 30px auto;
+    }
 
-.btn {
-  background: #1a1a1a;
-  padding: 12px;
-  border-radius: 12px;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  transition: 0.3s;
-}
+    .btn {
+      background: #1a1a1a;
+      padding: 12px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    }
 
-.btn:hover {
-  background: #333;
-  transform: scale(1.05);
-}
+    .btn:hover {
+      background: #333;
+      transform: scale(1.05);
+    }
 
+    /* WRITING BOX */
     .writing-box {
       margin-top: 40px;
       padding: 15px;
       background: #1a1a1a;
-      border-radius: 10px;
+      border-radius: 12px;
+      max-width: 350px;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 
 </head>
 
 <body>
-
-  <!-- YOUR PHOTO -->
+  
   <img src="subh.jpg">
 
-  <h1>Timeলাইন | Subh </h1>
-
+  <h1 Timeলাইন | Subh</h1>
   <p>
-  Somewhere between curiosity and silence, I keep searching for more. I notice what others feel, not just what they show. Different perspectives shape my world, quietly giving me strength. #ImSubbu.
+    Somewhere between curiosity and silence, I keep searching for more. I notice what others feel, not just what they show. Different perspectives shape my world, quietly giving me strength. #ImSubbu.
   </p>
-
-  <!-- BUTTONS -->
   <div class="buttons">
-    <a href="cineমা.html" class="btn">🎬 cineমা </a>
-    <a href="বইপত্র.html" class="btn">📚 বইপত্র</a>
-    <a href="muiজিক.html" class="btn">🎧 muiজিক</a>
-    <a href="চিন্তাধারা.html" class="btn">✍️ চিন্তাধারা</a>
+    <a href="cineমা.html" class="btn">🎬 Movies</a>
+    <a href="বইপত্র.html" class="btn">📚 Books</a>
+    <a href="muiজিক.html" class="btn">🎧 Music</a>
+    <a href="চিন্তাধারা.html" class="btn">✍️ Writing</a>
   </div>
-
-  <!-- LATEST WRITING -->
+    
   <div class="writing-box">
     <h3>Latest Thought ✍️</h3>
     <p>This website is still under maintenance, will be live from Tuesday onwards. 
-~ Subh</p>
+~ Subh</p></p>
   </div>
 
 </body>
