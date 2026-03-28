@@ -1,2 +1,142 @@
-<h1>My Writing ✍️</h1>
-<a href="index.html">Back</a>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>muiজিক</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+
+      background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)),
+      url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f');
+      background-size: cover;
+      background-position: center;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* GRID */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* CARD */
+    .card {
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.08);
+      border-radius: 15px;
+      overflow: hidden;
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background: rgba(255,255,255,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .content {
+      padding: 10px;
+    }
+
+    .title {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .desc {
+      font-size: 12px;
+      color: #ccc;
+      margin-top: 5px;
+    }
+
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 25px;
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    .back:hover {
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h1>muiজিক 🎧</h1>
+
+  <div class="container">
+
+    <!-- PLAYLIST 1 -->
+    <a href="https://open.spotify.com/playlist/3IwUySWYoV0r1hZLRwA09q?si=Cj4dCvvZSkKC_YMmSAyAVQ" target="_blank" class="card">
+      <img src="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1774717798428-d91750a4.jpg">
+      <div class="content">
+        <div class="Surfing Hell">Playlist 1</div>
+        <div class="desc">When I close my eyes, lying in my pg's bed or running in the treadmill, deep down I miss those memories which taught me to choose silence over everything. Not to act cool/sigma but to realize why my father used that torn and worn-out slippers just become I can wear sneakers of nike. #prspctivispowr..</div>
+      </div>
+    </a>
+
+    <!-- PLAYLIST 2 -->
+    <a href="https://open.spotify.com/playlist/6UllkqwnnnIlSlV4XxZQeb?si=dFxKRRLsSgi3X_AuPIh7pw" target="_blank" class="card">
+      <img src="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1774717935089-12e7f4e5.jpg">
+      <div class="content">
+        <div class="9:00 PM at Sector 2">Playlist 2</div>
+        <div class="desc">Moonlight on my Face.</div>
+      </div>
+    </a>
+
+    <!-- PLAYLIST 3 -->
+    <a href="https://open.spotify.com/playlist/3uPgjH4GPUblkLm8AGwuRb?si=gQJiKVEOToS3wJ7DIhTvbg" target="_blank" class="card">
+      <img src="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1774717940375-bb965b73.jpg">
+      <div class="content">
+        <div class="Petrichor">Playlist 3</div>
+        <div class="desc">ভিজে মাটির সোঁদা গন্ধ.</div>
+      </div>
+    </a>
+
+    <!-- PLAYLIST 4 -->
+    <a href="https://open.spotify.com/playlist/2yvhB0uQymjgfzWDx6IzlF?si=lePhnTN8TyiuA7GdxGmlBA" target="_blank" class="card">
+      <img src="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1774718387129-a7f79e0e.jpg">
+      <div class="content">
+        <div class="Western Waves">Playlist 4</div>
+        <div class="desc">Energy and motivation boost.</div>
+      </div>
+    </a>
+
+    <!-- PLAYLIST 5 -->
+    <a href="https://open.spotify.com/playlist/5ZpNFpGxv69utS1yjJudJj?si=pHoBIH0CS5uUF-gNIIaPFg" target="_blank" class="card">
+      <img src="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1774718062465-58f45c82.jpg">
+      <div class="content">
+        <div class="Aquarium fish in the Ocean">Playlist 5</div>
+        <div class="desc">When you discover yourself surrounded by the ocean, but you are only the goldfish there..</div>
+      </div>
+    </a>
+
+  </div>
+
+  <a href="index.html" class="back">← Back to Timeলাইন</a>
+
+</body>
+</html>
