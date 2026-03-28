@@ -33,25 +33,28 @@
       font-size: 14px;
     }
 
-    .buttons {
-      margin-top: 30px;
-    }
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 15px;
+  max-width: 300px;
+  margin: 30px auto;
+}
 
-    .btn {
-      display: block;
-      background: #1a1a1a;
-      padding: 12px;
-      margin: 10px auto;
-      width: 200px;
-      border-radius: 10px;
-      text-decoration: none;
-      color: white;
-      transition: 0.3s;
-    }
+.btn {
+  background: #1a1a1a;
+  padding: 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  transition: 0.3s;
+}
 
-    .btn:hover {
-      background: #333;
-    }
+.btn:hover {
+  background: #333;
+  transform: scale(1.05);
+}
 
     .writing-box {
       margin-top: 40px;
@@ -76,10 +79,10 @@
 
   <!-- BUTTONS -->
   <div class="buttons">
-    <a href="movies.html" class="btn">🎬 cineমা </a>
-    <a href="books.html" class="btn">📚 বইপত্র</a>
-    <a href="music.html" class="btn">🎧 muiজিক</a>
-    <a href="writing.html" class="btn">✍️ চিন্তাধারা</a>
+    <a href="cineমা.html" class="btn">🎬 cineমা </a>
+    <a href="বইপত্র.html" class="btn">📚 বইপত্র</a>
+    <a href="muiজিক.html" class="btn">🎧 muiজিক</a>
+    <a href="চিন্তাধারা.html" class="btn">✍️ চিন্তাধারা</a>
   </div>
 
   <!-- LATEST WRITING -->
